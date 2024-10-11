@@ -3,8 +3,6 @@ const estudiantes = [
         nombre: 'Juan',
         apellido: 'Pérez',
         asistenciaAnual: {
-            enero: 20,
-            febrero: 18,
             marzo: 22,
             abril: 20,
             mayo: 21,
@@ -21,8 +19,6 @@ const estudiantes = [
         nombre: 'María',
         apellido: 'López',
         asistenciaAnual: {
-            enero: 22,
-            febrero: 20,
             marzo: 23,
             abril: 21,
             mayo: 22,
@@ -39,8 +35,6 @@ const estudiantes = [
         nombre: 'Pedro',
         apellido: 'González',
         asistenciaAnual: {
-            enero: 18,
-            febrero: 17,
             marzo: 20,
             abril: 19,
             mayo: 22,
@@ -57,8 +51,6 @@ const estudiantes = [
         nombre: 'Laura',
         apellido: 'Martínez',
         asistenciaAnual: {
-            enero: 21,
-            febrero: 19,
             marzo: 22,
             abril: 20,
             mayo: 23,
@@ -75,8 +67,6 @@ const estudiantes = [
         nombre: 'Carlos',
         apellido: 'Fernández',
         asistenciaAnual: {
-            enero: 19,
-            febrero: 18,
             marzo: 21,
             abril: 22,
             mayo: 21,
