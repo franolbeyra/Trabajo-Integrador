@@ -82,3 +82,28 @@ const estudiantes = [
 ];
 
 console.log(estudiantes);
+
+
+function Asistenciaanual() {
+    
+}
+const totalDiasHabiles = 190;
+
+for (let i = 0; i < estudiantes.length; i++) {
+    const estudiante = estudiantes[i];
+    
+    let asistenciaTotal = 0; 
+
+    const meses = Object.keys(estudiante.asistenciaAnual); 
+    for (let j = 0; j < meses.length; j++) {
+        const mes = meses[j];
+        asistenciaTotal += estudiante.asistenciaAnual[mes]; // Sumar los días de asistencia
+    }
+
+    // Calcular faltas
+    const faltas = totalDiasHabiles - asistenciaTotal;
+}
+
+    console.log(`${estudiante.nombre} ${estudiante.apellido}:`);
+    console.log(`Asistencia Total: ${asistenciaTotal}`);
+    
