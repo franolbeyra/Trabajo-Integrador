@@ -3,32 +3,32 @@ const estudiantes = [
         nombre: 'Juan',
         apellido: 'Pérez',
         asistenciaAnual: {
-            marzo: 22,
-            abril: 20,
-            mayo: 21,
+            marzo: 15,
+            abril: 18,
+            mayo: 20,
             junio: 19,
-            julio: 23,
-            agosto: 25,
-            septiembre: 20,
-            octubre: 22,
-            noviembre: 19,
-            diciembre: 21
+            julio: 17,
+            agosto: 20,
+            septiembre: 18,
+            octubre: 14,
+            noviembre: 16,
+            diciembre: 10 // Suma total = 157
         }
     },
     {
         nombre: 'María',
         apellido: 'López',
         asistenciaAnual: {
-            marzo: 23,
-            abril: 21,
-            mayo: 22,
-            junio: 18,
-            julio: 24,
-            agosto: 23,
-            septiembre: 21,
-            octubre: 22,
-            noviembre: 20,
-            diciembre: 22
+            marzo: 22,
+            abril: 20,
+            mayo: 18,
+            junio: 16,
+            julio: 15,
+            agosto: 19,
+            septiembre: 14,
+            octubre: 20,
+            noviembre: 15,
+            diciembre: 12 // Suma total = 170
         }
     },
     {
@@ -36,47 +36,47 @@ const estudiantes = [
         apellido: 'González',
         asistenciaAnual: {
             marzo: 20,
-            abril: 19,
-            mayo: 22,
-            junio: 20,
-            julio: 23,
-            agosto: 24,
-            septiembre: 22,
-            octubre: 21,
-            noviembre: 19,
-            diciembre: 20
+            abril: 18,
+            mayo: 19,
+            junio: 21,
+            julio: 14,
+            agosto: 17,
+            septiembre: 18,
+            octubre: 16,
+            noviembre: 15,
+            diciembre: 10 // Suma total = 168
         }
     },
     {
         nombre: 'Laura',
         apellido: 'Martínez',
         asistenciaAnual: {
-            marzo: 22,
-            abril: 20,
-            mayo: 23,
-            junio: 19,
-            julio: 22,
-            agosto: 21,
-            septiembre: 23,
-            octubre: 22,
-            noviembre: 21,
-            diciembre: 23
+            marzo: 17,
+            abril: 19,
+            mayo: 20,
+            junio: 18,
+            julio: 16,
+            agosto: 20,
+            septiembre: 15,
+            octubre: 18,
+            noviembre: 14,
+            diciembre: 11 // Suma total = 168
         }
     },
     {
         nombre: 'Carlos',
         apellido: 'Fernández',
         asistenciaAnual: {
-            marzo: 21,
-            abril: 22,
-            mayo: 21,
-            junio: 18,
-            julio: 20,
-            agosto: 22,
-            septiembre: 23,
-            octubre: 21,
-            noviembre: 20,
-            diciembre: 22
+            marzo: 20,
+            abril: 19,
+            mayo: 20,
+            junio: 20,
+            julio: 10,
+            agosto: 15,
+            septiembre: 14,
+            octubre: 16,
+            noviembre: 12,
+            diciembre: 8 // Suma total = 154
         }
     }
 ];
@@ -107,7 +107,7 @@ for (let i = 0; i < estudiantes.length; i++) {
         }
     
         // Calcular faltas
-        const faltas = totalDiasHabiles - asistenciaTotal;
+        const faltas =totalDiasHabiles - asistenciaTotal ;
     
         console.log(`${estudiante.nombre} ${estudiante.apellido}:`);
         console.log(`Asistencia Total: ${asistenciaTotal}`);
