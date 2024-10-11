@@ -83,35 +83,47 @@ const estudiantes = [
 
 console.log(estudiantes);
 
+   function calcularAsistencia() {
+    const totalDiasHabiles = 190;
 
-function Asistenciaanual() {
-    
-}
-const totalDiasHabiles = 190;
-
-for (let i = 0; i < estudiantes.length; i++) {
-    const estudiante = estudiantes[i];
-    
-    let asistenciaTotal = 0; 
-
-    const totalDiasHabiles = 190; // Días hábiles totales en el año
+    // Crear un arreglo para almacenar los resultados
+    let resultados = [];
 
     for (let i = 0; i < estudiantes.length; i++) {
         const estudiante = estudiantes[i];
         let asistenciaTotal = 0;
-    
-        const meses = Object.keys(estudiante.asistenciaAnual); 
+
+        // Sumar los días de asistencia
+        const meses = Object.keys(estudiante.asistenciaAnual);
         for (let j = 0; j < meses.length; j++) {
             const mes = meses[j];
-            asistenciaTotal += estudiante.asistenciaAnual[mes]; // Sumar los días de asistencia
+            asistenciaTotal += estudiante.asistenciaAnual[mes];
         }
-    
+
         // Calcular faltas
-        const faltas =totalDiasHabiles - asistenciaTotal ;
-    
-        console.log(`${estudiante.nombre} ${estudiante.apellido}:`);
-        console.log(`Asistencia Total: ${asistenciaTotal}`);
-        console.log(`Faltas: ${faltas}`);
-    
-    
-    }}
+        const faltas = totalDiasHabiles - asistenciaTotal;
+
+        // Agregar el resultado al arreglo
+        resultados.push({
+            nombre: estudiante.nombre,
+            apellido: estudiante.apellido,
+            asistenciaTotal: asistenciaTotal,
+            faltas: faltas
+        });
+    }
+
+    // Ordenar los resultados por asistenciaTotal usando .sort()
+    resultados.sort(function(a, b) {
+        return a.asistenciaTotal - b.asistenciaTotal; // Ordenar de menor a mayor
+    });
+
+    // Mostrar los resultados ordenados
+    for (let k = 0; k < resultados.length; k++) {
+        console.log(`${resultados[k].nombre} ${resultados[k].apellido}:`);
+        console.log(`Asistencia Total: ${resultados[k].asistenciaTotal}`);
+        console.log(`Faltas: ${resultados[k].faltas}`);
+    }
+}
+
+// Llamar a la función para calcular y mostrar la asistencia
+calcularAsistencia();
