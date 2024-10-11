@@ -5,8 +5,8 @@ const estudiantes = [
         examenes: [
             {
                 materia: 'algebra',
-                asistencia: [true, false, true], // Asistencia a tres exámenes
-                notas: [8, 0, 7]                 // Notas correspondientes (0 por falta de asistencia)
+                asistencia: [true, false, true], 
+                notas: [8, 0, 7]                 
             },
             {
                 materia: 'matematica',
