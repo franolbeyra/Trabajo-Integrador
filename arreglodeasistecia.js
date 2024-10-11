@@ -94,16 +94,24 @@ for (let i = 0; i < estudiantes.length; i++) {
     
     let asistenciaTotal = 0; 
 
-    const meses = Object.keys(estudiante.asistenciaAnual); 
-    for (let j = 0; j < meses.length; j++) {
-        const mes = meses[j];
-        asistenciaTotal += estudiante.asistenciaAnual[mes]; // Sumar los días de asistencia
-    }
+    const totalDiasHabiles = 190; // Días hábiles totales en el año
 
-    // Calcular faltas
-    const faltas = totalDiasHabiles - asistenciaTotal;
-}
-
-    console.log(`${estudiante.nombre} ${estudiante.apellido}:`);
-    console.log(`Asistencia Total: ${asistenciaTotal}`);
+    for (let i = 0; i < estudiantes.length; i++) {
+        const estudiante = estudiantes[i];
+        let asistenciaTotal = 0;
     
+        const meses = Object.keys(estudiante.asistenciaAnual); 
+        for (let j = 0; j < meses.length; j++) {
+            const mes = meses[j];
+            asistenciaTotal += estudiante.asistenciaAnual[mes]; // Sumar los días de asistencia
+        }
+    
+        // Calcular faltas
+        const faltas = totalDiasHabiles - asistenciaTotal;
+    
+        console.log(`${estudiante.nombre} ${estudiante.apellido}:`);
+        console.log(`Asistencia Total: ${asistenciaTotal}`);
+        console.log(`Faltas: ${faltas}`);
+    
+    
+    }}
