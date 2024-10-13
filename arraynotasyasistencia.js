@@ -156,7 +156,7 @@ const estudiantesNotas = [
     }
 ];
 
-//console.log(estudiantes);
+console.log(estudiantesNotas);
 
 export default estudiantesNotas
 
