@@ -83,4 +83,4 @@ const estudiantes = [
 
 //console.log(estudiantes);
 
-export default estudiantes
+export  default estudiantes
