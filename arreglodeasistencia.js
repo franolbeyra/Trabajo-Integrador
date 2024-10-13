@@ -81,7 +81,7 @@ const estudiantes = [
     }
 ];
 
-console.log(estudiantes);
+//console.log(estudiantes);
 
    function calcularAsistencia() {
     const totalDiasHabiles = 190;
