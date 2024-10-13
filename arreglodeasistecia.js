@@ -99,16 +99,21 @@ console.log(estudiantes);
             const mes = meses[j];
             asistenciaTotal += estudiante.asistenciaAnual[mes];
         }
+        const promedioAsistidor = (((asistenciaTotal * 100) / totalDiasHabiles).toFixed(0)) + " %"
 
         // Calcular faltas
         const faltas = totalDiasHabiles - asistenciaTotal;
+
+        
 
         // Agregar el resultado al arreglo
         resultados.push({
             nombre: estudiante.nombre,
             apellido: estudiante.apellido,
             asistenciaTotal: asistenciaTotal,
+            promedioAsistidor: promedioAsistidor,
             faltas: faltas
+            
         });
     }
 
@@ -121,6 +126,7 @@ console.log(estudiantes);
     for (let k = 0; k < resultados.length; k++) {
         console.log(`${resultados[k].nombre} ${resultados[k].apellido}:`);
         console.log(`Asistencia Total: ${resultados[k].asistenciaTotal}`);
+        console.log(`Promedio Asistencia: ${resultados[k].promedioAsistidor}`);
         console.log(`Faltas: ${resultados[k].faltas}`);
     }
 }

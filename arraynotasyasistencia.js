@@ -181,11 +181,11 @@ function calcularPromediosPorMateria(estudiantes) {
             // Calcular el promedio
             const promedio = suma / cantidad;
 
-            // Guardar el promedio en el objeto promedios
+            //*/ Guardar el promedio en el objeto promedios
             if (!promedios[materia]) {
                 promedios[materia] = {};
             }
-            promedios[materia][nombre] = promedio; // Asignar el promedio al alumno
+            promedios[materia][nombre] = promedio; // Asignar el promedio al alumno*/
         }
     }
 
@@ -193,5 +193,5 @@ function calcularPromediosPorMateria(estudiantes) {
 }
 
 // Uso de la función
-const promediosPorMateria = calcularPromediosPorMateria(estudiantes);
-console.log(promediosPorMateria);
+//const promediosPorMateria = calcularPromediosPorMateria(estudiantes);
+console.log(promediosPorMateria(estudiantes));
