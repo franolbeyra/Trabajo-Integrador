@@ -160,3 +160,5 @@ console.log(estudiantesNotas);
 
 export default estudiantesNotas
 
+
+
