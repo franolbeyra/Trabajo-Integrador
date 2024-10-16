@@ -38,3 +38,12 @@ function calcularPromediosPorMateria(estudiantesNotas) {
 // Uso de la función
 const promediosPorMateria = calcularPromediosPorMateria(estudiantesNotas);
 console.log(promediosPorMateria);
+
+
+/*function PromedioIndividual(promedios,nombre,apellido) {
+   
+    let nombre = prompt("Ingrese el nombre del estudiante: ");
+    let apellido=prompt("Ingrese el apellido del estudiante: ");
+    
+    
+}*/

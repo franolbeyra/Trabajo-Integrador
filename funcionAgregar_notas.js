@@ -1,11 +1,20 @@
 import estudiantesNotas from './arraynotasyasistencia.js';
+import promptSync from 'prompt-sync';
+const prompt = promptSync();
 
 
 
+function Agregar(estudiantesNotas) {
 
-function Agregar(estudiantesNotas, nombre, apellido, materia, num) {
+    let nombre = prompt("Ingrese el nombre del estudiante: ");
+    let apellido=prompt("Ingrese el apellido del estudiante: ");
+    let materia=prompt("Ingrese el nombre de la materia: ");
+    let num=  Number(prompt("Ingrese la nota que quiere agregar: "));
+    
     for (let i = 0; i < estudiantesNotas.length; i++) {
         const estudiante = estudiantesNotas[i];
+    
+       
 
         // Verificamos si el nombre del estudiante coincide
         if (estudiante.nombre === nombre && estudiante.apellido === apellido) {
@@ -33,10 +42,10 @@ function Agregar(estudiantesNotas, nombre, apellido, materia, num) {
         });
     });
 
-    return estudiantesNotas; // Retorna el arreglo actualizado
+    //return estudiantesNotas; // Retorna el arreglo actualizado//
 }
 
 // Llamar a la función y mostrar los resultados
-console.log(Agregar(estudiantesNotas, "Carlos","Fernández", "algebra", 3));
+Agregar(estudiantesNotas);
 
 export default estudiantesNotas

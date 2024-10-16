@@ -94,7 +94,7 @@ const estudiantesNotas = [
     },
     {
         nombre: 'Laura',
-        apellido: 'Martínez',
+        apellido: 'Martinez',
         examenes: [
             {
                 materia: 'algebra',
@@ -125,7 +125,7 @@ const estudiantesNotas = [
     },
     {
         nombre: 'Carlos',
-        apellido: 'Fernández',
+        apellido: 'Fernandez',
         examenes: [
             {
                 materia: 'algebra',
@@ -156,7 +156,6 @@ const estudiantesNotas = [
     }
 ];
 
-console.log(estudiantesNotas);
 
 export default estudiantesNotas
 
