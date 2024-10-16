@@ -1,4 +1,5 @@
-import estudiantesNotas from './arraynotasyasistencia.js';
+import estudiantesNotas from './funcionAgregar_notas.js';
+
 function calcularPromediosPorMateria(estudiantesNotas) {
     const promedios = {};
 
@@ -20,7 +21,7 @@ function calcularPromediosPorMateria(estudiantesNotas) {
                 suma += notas[j];
             }
 
-            // Calcular el promedio y dejar dos dijitos
+            // Calcular el promedio y dejar dos digitos
             const promedio = (suma / cantidad).toFixed(2);
 
             // Guardar el promedio en el objeto promedios

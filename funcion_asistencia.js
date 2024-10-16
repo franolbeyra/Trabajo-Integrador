@@ -1,3 +1,4 @@
+import estudiantesNotas from './arraynotasyasistencia.js';
 import estudiantes from './arreglodeasistencia.js';
 function calcularAsistencia() {
     const totalDiasHabiles = 190;
@@ -49,3 +50,5 @@ function calcularAsistencia() {
 
 // Llamar a la función para calcular y mostrar la asistencia
 calcularAsistencia();
+
+

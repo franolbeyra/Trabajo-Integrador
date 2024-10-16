@@ -37,4 +37,6 @@ function Agregar(estudiantesNotas, nombre, apellido, materia, num) {
 }
 
 // Llamar a la función y mostrar los resultados
-console.log(Agregar(estudiantesNotas, "Carlos","Fernández", "algebra", 10));
+console.log(Agregar(estudiantesNotas, "Carlos","Fernández", "algebra", 3));
+
+export default estudiantesNotas
