@@ -1,7 +1,7 @@
 const estudiantesNotas = [
     {
         nombre: 'Juan',
-        apellido: 'Pérez',
+        apellido: 'Perez',
         examenes: [
             {
                 materia: 'algebra',

@@ -24,7 +24,7 @@ function Agregar(estudiantesNotas) {
 
                 // Verificamos si la materia coincide
                 if (examen.materia === materia) {
-                    examen.notas.push(num); // Agrega la nota
+                    examen.notas.push(num); //Agrega la nota
                     break; // Sale del bucle de exámenes una vez que agrega la nota
                 }
             }
