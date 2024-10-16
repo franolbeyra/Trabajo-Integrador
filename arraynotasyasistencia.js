@@ -32,7 +32,7 @@ const estudiantesNotas = [
     },
     {
         nombre: 'Maria',
-        apellido: 'López',
+        apellido: 'Lopez',
         examenes: [
             {
                 materia: 'algebra',
@@ -63,7 +63,7 @@ const estudiantesNotas = [
     },
     {
         nombre: 'Pedro',
-        apellido: 'González',
+        apellido: 'Gonzalez',
         examenes: [
             {
                 materia: 'algebra',
