@@ -49,6 +49,6 @@ function calcularAsistencia() {
 }
 
 // Llamar a la función para calcular y mostrar la asistencia
-calcularAsistencia();
+//calcularAsistencia();//
 
 
