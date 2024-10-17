@@ -1,9 +1,6 @@
+const prompt = promptSync();
 import promptSync from 'prompt-sync';
 import estudiantesNotas from './arraynotasyasistencia.js';
-
-const prompt = promptSync();
-
-
 
 function Agregar() {
 
