@@ -1,7 +1,7 @@
 const estudiantes = [
     {
         nombre: 'Juan',
-        apellido: 'Pérez',
+        apellido: 'Perez',
         asistenciaAnual: {
             marzo: 15,
             abril: 18,
@@ -16,8 +16,8 @@ const estudiantes = [
         }
     },
     {
-        nombre: 'María',
-        apellido: 'López',
+        nombre: 'Maria',
+        apellido: 'Lopez',
         asistenciaAnual: {
             marzo: 22,
             abril: 20,
@@ -33,7 +33,7 @@ const estudiantes = [
     },
     {
         nombre: 'Pedro',
-        apellido: 'González',
+        apellido: 'Gonzalez',
         asistenciaAnual: {
             marzo: 20,
             abril: 18,
@@ -49,7 +49,7 @@ const estudiantes = [
     },
     {
         nombre: 'Laura',
-        apellido: 'Martínez',
+        apellido: 'Martinez',
         asistenciaAnual: {
             marzo: 17,
             abril: 19,
@@ -65,7 +65,7 @@ const estudiantes = [
     },
     {
         nombre: 'Carlos',
-        apellido: 'Fernández',
+        apellido: 'Fernandez',
         asistenciaAnual: {
             marzo: 20,
             abril: 19,
