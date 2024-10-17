@@ -44,5 +44,6 @@ function Agregar() {
 }
 
 // Llamar a la función y mostrar los resultados
-Agregar(estudiantesNotas);
+//Agregar(estudiantesNotas);
 
+export default Agregar;
