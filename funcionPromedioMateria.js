@@ -1,6 +1,6 @@
-import estudiantesNotas from './funcionAgregar_notas.js';
+import estudiantesNotas from './arraynotasyasistencia.js';
 
-function calcularPromediosPorMateria(estudiantesNotas) {
+function calcularPromediosPorMateria() {
     const promedios = {};
 
     // Recorrer cada estudiante

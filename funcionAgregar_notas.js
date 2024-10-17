@@ -1,10 +1,11 @@
-import estudiantesNotas from './arraynotasyasistencia.js';
 import promptSync from 'prompt-sync';
+import estudiantesNotas from './arraynotasyasistencia.js';
+
 const prompt = promptSync();
 
 
 
-function Agregar(estudiantesNotas) {
+function Agregar() {
 
     let nombre = prompt("Ingrese el nombre del estudiante: ");
     let apellido=prompt("Ingrese el apellido del estudiante: ");
@@ -42,10 +43,9 @@ function Agregar(estudiantesNotas) {
         });
     });
 
-    //return estudiantesNotas; // Retorna el arreglo actualizado//
+    return estudiantesNotas; // Retorna el arreglo actualizado//
 }
 
 // Llamar a la función y mostrar los resultados
 Agregar(estudiantesNotas);
 
-export default estudiantesNotas
