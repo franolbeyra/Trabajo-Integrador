@@ -28,7 +28,7 @@ const estudiantes = [
             septiembre: 14,
             octubre: 20,
             noviembre: 15,
-            diciembre: 12 // Suma total = 170
+            diciembre: 12, // Suma total = 170
         }
     },
     {
