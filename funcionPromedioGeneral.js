@@ -32,6 +32,6 @@ function calcularPromedioGeneral(estudiantesNotas) {
 const promedioGeneral = calcularPromedioGeneral(estudiantesNotas);
 console.log(promedioGeneral);
 
-export default calcularPromedioGeneral
+export default calcularPromedioGeneral;
 
 
