@@ -42,6 +42,6 @@ function cambiarNotaPorNombre() {
 
 // Ejemplo de uso:
 //cambiarNotaPorNombre("Carlos", "Fernandez", "programacion", 1, 9); 
-cambiarNotaPorNombre()
+
 
 export default cambiarNotaPorNombre;

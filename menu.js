@@ -1,5 +1,5 @@
 import estudiantesNotas from './arraynotasyasistencia.js';
-import Agregar from './funcionAgregar_notas.js';
+import agregar from './funcionAgregar_notas.js';
 import calcularPromediosPorMateria from './funcionPromedioMateria.js';
 import calcularPromedioGeneral from './funcionPromedioGeneral.js';
 import calcularAsistencia from './funcion_asistencia.js';
@@ -22,7 +22,8 @@ function menu() {
         opcion = prompt("Ingrese el número de opción (o escriba 'salir' para terminar): ").toLowerCase();
 
         if (opcion === '1') {
-            Agregar();
+            const agregarNota = agregar(estudiantesNotas);
+            console.log(agregarNota);
         } else if (opcion === '2') {
             const promediosPorMateria = calcularPromediosPorMateria(estudiantesNotas);
             console.log(promediosPorMateria);
@@ -44,3 +45,4 @@ function menu() {
     console.log("Saliendo del programa...")}
 
     menu();
+    
