@@ -2,7 +2,7 @@
   "name": "trabajo-integrador",
   "version": "1.0.0",
   "description": "",
-  "main": "arraynotasyasistencia.js",
+  "main": "arraynoxtasyasistencia.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +11,7 @@
   "license": "ISC",
   "keywords": [],
   "dependencies": {
+    "inquirer": "^12.0.0",
     "prompt-sync": "^4.2.0"
   }
 }
