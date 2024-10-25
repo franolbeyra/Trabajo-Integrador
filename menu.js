@@ -5,7 +5,9 @@ import calcularPromedioGeneral from './funcionPromedioGeneral.js';
 import calcularAsistencia from './funcion_asistencia.js';
 import cambiarNotaPorNombre from './funcion_cambiarnota.js';
 import verificarPromocion from './funcionPromocion.js';
+import agregarEstudiante from './funcionAgregarAlumnos.js';
 import promptSync from 'prompt-sync';
+import estudiantes from './arreglodeasistencia.js';
 
 
 const prompt = promptSync();
@@ -19,7 +21,8 @@ function menu() {
         console.log("3. Calcular promedios general");
         console.log("4. Cambiar nota");       
         console.log("5. Asistencia estudiantes");    
-        console.log("6. Estudiantes habilitados a promocion");    
+        console.log("6. Estudiantes habilitados a promocion"); 
+        console.log("7. Agregar nuevo alumno");
         console.log("0. Salir");
         opcion = prompt("Ingrese el número de opción (o escriba 'salir' para terminar): ").toLowerCase();
 
@@ -41,6 +44,9 @@ function menu() {
         } else if (opcion === '6') {
             const promocion = obtenerPromociones(estudiantesNotas);
             console.log(promocion);
+        } else if (opcion === '7') {
+            const nuevoEstudiante = agregarEstudiante(estudiantes,estudiantesNotas);
+            console.log(nuevoEstudiante);
         } else if (opcion !== '0' && opcion !== 'salir') {
             console.log("Opción no válida, por favor selecciona una opción del menú.");
         

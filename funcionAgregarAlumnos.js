@@ -1,5 +1,9 @@
-let estudiantes = [];
-let estudiantesNotas = [];
+const prompt = promptSync();
+
+import promptSync from 'prompt-sync';
+
+
+let estudiantes = []; // Arreglo global para almacenar todos los estudiantes
 
 function agregarEstudiante() {
     const nombre = prompt("Ingrese el nombre del estudiante:");
@@ -53,23 +57,21 @@ function agregarEstudiante() {
         diciembre: parseInt(prompt("Ingrese la asistencia de diciembre:"))
     };
 
-    // Agregar el estudiante al arreglo de notas
-    estudiantesNotas.push({
-        nombre: nombre,
-        apellido: apellido,
-        examenes: examenes
-    });
 
-    // Agregar el estudiante al arreglo de asistencia
+    // Agregar el estudiante al arreglo de estudiantes
     estudiantes.push({
         nombre: nombre,
         apellido: apellido,
+        examenes: examenes,
         asistenciaAnual: asistenciaAnual
     });
 
     // Confirmar la adición del estudiante
-    console.log(`${nombre} ${apellido} ha sido agregado a los arreglos.`);
+    console.log(`${nombre} ${apellido} ha sido agregado al arreglo de estudiantes.`);
 }
 
-// Ejecutar la función para agregar un nuevo estudiante (sin recursión)
-agregarEstudiante();
+// Ejecutar la función para agregar un nuevo estudiante
+//agregarEstudiante();
+
+
+export default agregarEstudiante
