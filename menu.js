@@ -39,7 +39,7 @@ function menu() {
             const promedioAsistencia = calcularAsistencia(estudiantesNotas);
             console.log(promedioAsistencia);
         } else if (opcion === '6') {
-            const promocion = verificarPromocion();
+            const promocion = obtenerPromociones(estudiantesNotas);
             console.log(promocion);
         } else if (opcion !== '0' && opcion !== 'salir') {
             console.log("Opción no válida, por favor selecciona una opción del menú.");
