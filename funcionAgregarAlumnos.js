@@ -1,5 +1,7 @@
 const prompt = promptSync();
+
 import promptSync from 'prompt-sync';
+
 
 let estudiantes = []; // Arreglo global para almacenar todos los estudiantes
 
@@ -69,4 +71,7 @@ function agregarEstudiante() {
 }
 
 // Ejecutar la función para agregar un nuevo estudiante
-agregarEstudiante();
+//agregarEstudiante();
+
+
+export default agregarEstudiante
