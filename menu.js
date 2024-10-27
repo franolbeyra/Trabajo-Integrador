@@ -1,12 +1,10 @@
-menu.js
-
 import estudiantesNotas from './arraynotasyasistencia.js';
 import agregar from './funcionAgregar_notas.js';
 import calcularPromediosPorMateria from './funcionPromedioMateria.js';
 import calcularPromedioGeneral from './funcionPromedioGeneral.js';
 import calcularAsistencia from './funcion_asistencia.js';
 import cambiarNotaPorNombre from './funcion_cambiarnota.js';
-import verificarPromocion from './funcionPromocion.js';
+import obtenerPromociones from './funcionPromocion2.js';
 import agregarEstudiante from './funcionAgregarAlumnos.js';
 import promptSync from 'prompt-sync';
 import estudiantes from './arreglodeasistencia.js';

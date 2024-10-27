@@ -1,4 +1,4 @@
-import estudiantesNotas from './arraynotasyasistencia.js';
+//import estudiantesNotas from './arraynotasyasistencia.js';
 import calcularPromediosPorMateria from './funcionPromedioMateria.js';
 
 function obtenerPromociones(estudiantesNotas) {
@@ -25,7 +25,7 @@ function obtenerPromociones(estudiantesNotas) {
 
         // Guardamos los resultados para cada materia
         if (promocionados.length > 0) {
-            resultados.push(materia + ": " + promocionados.join(', ') + " promocionaron");
+            resultados.push(materia + ": " + promocionados.join(', ') + " habilitado/s a promoción");
         } else {
             resultados.push(materia + ": Nadie promocionó");
         }
@@ -33,6 +33,6 @@ function obtenerPromociones(estudiantesNotas) {
 
     return resultados;
 }
-  //console.log(obtenerPromociones(estudiantesNotas))//
+ 
 
   export default obtenerPromociones;

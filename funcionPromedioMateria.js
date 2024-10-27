@@ -1,4 +1,4 @@
-funcionPromedioMateria.js
+
 
 import estudiantesNotas from './arraynotasyasistencia.js';
 

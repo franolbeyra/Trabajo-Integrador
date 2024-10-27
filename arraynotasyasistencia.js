@@ -1,4 +1,4 @@
-arraynotasyasistencia.js
+
 
 const estudiantesNotas = [
     {

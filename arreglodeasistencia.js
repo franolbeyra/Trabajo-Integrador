@@ -1,5 +1,3 @@
-arreglodeasistencia.js
-
 const estudiantes = [
     {
         nombre: 'Juan',

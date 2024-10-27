@@ -1,4 +1,3 @@
-funcionAgregar_notas.js
 
 
 const prompt = promptSync();
@@ -37,13 +36,13 @@ function agregar() {
     estudiantesNotas.forEach(estudiante => {
         console.log(`Nombre: ${estudiante.nombre}, Apellido: ${estudiante.apellido}`);
         estudiante.examenes.forEach(examen => {
-            console.log(`  Materia: ${examen.materia}`);
-            console.log(`  Asistencia: ${examen.asistencia}`);
-            console.log(`  Notas: ${examen.notas}`);
+           // console.log(`  Materia: ${examen.materia}`);
+            //console.log(`  Asistencia: ${examen.asistencia}`);
+            //console.log(`  Notas: ${examen.notas}`);
         });
     });
 
-    return estudiantesNotas; // Retorna el arreglo actualizado//
+ //  return estudiantesNotas;  Retorna el arreglo actualizado//
 }
 
 // Llamar a la función y mostrar los resultados

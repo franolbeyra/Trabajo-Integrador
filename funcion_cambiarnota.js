@@ -1,5 +1,3 @@
-funcion_cambiarnota.js
-
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
 import estudiantesNotas from './arraynotasyasistencia.js';

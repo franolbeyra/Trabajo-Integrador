@@ -1,5 +1,3 @@
-funcion_asistencia.js
-
 import estudiantes from './arreglodeasistencia.js';
 function calcularAsistencia() {
     const totalDiasHabiles = 190;

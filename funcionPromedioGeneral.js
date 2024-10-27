@@ -1,4 +1,3 @@
-funcionPromedioGeneral.js
 
 import estudiantesNotas from './arraynotasyasistencia.js';
 

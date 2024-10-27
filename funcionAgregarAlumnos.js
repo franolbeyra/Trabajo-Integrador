@@ -1,50 +1,15 @@
-funcionAgregarAlumnos.js
-
-const prompt = promptSync();
+import estudiantes from './arreglodeasistencia.js';
+import estudiantesNotas from './arraynotasyasistencia.js';
 import promptSync from 'prompt-sync';
 
+const prompt = promptSync();
 
-let estudiantes = []; // Arreglo global para almacenar todos los estudiantes
 
 function agregarEstudiante() {
     const nombre = prompt("Ingrese el nombre del estudiante:");
     const apellido = prompt("Ingrese el apellido del estudiante:");
 
-    // Arreglo para almacenar los exámenes y notas del estudiante
-    let examenes = [];
-    let continuar = true;
-
-    // Ciclo para ingresar materias, notas y asistencias para cada materia
-    while (continuar) {
-        // Ingresar la materia
-        let materia = prompt("Ingrese el nombre de la materia:");
-
-        // Ingresar las notas para la materia
-        let notas = [];
-        for (let i = 0; i < 3; i++) {
-            let nota = parseFloat(prompt(`Ingrese la nota ${i + 1} para la materia ${materia}:`));
-            notas.push(nota);
-        }
-
-        // Ingresar la asistencia para la materia
-        let asistencia = [];
-        for (let i = 0; i < 3; i++) {
-            let asistio = prompt(`¿El estudiante asistió a la clase ${i + 1} de ${materia}? (si/no)`).toLowerCase();
-            asistencia.push(asistio === 'si');  // Convertir "si" en true y "no" en false
-        }
-
-        // Agregar el objeto examen al arreglo de exámenes
-        examenes.push({
-            materia: materia,
-            asistencia: asistencia,
-            notas: notas
-        });
-
-        // Preguntar si desea agregar más materias
-        continuar = prompt("¿Desea agregar otra materia? (si/no)").toLowerCase() === 'si';
-    }
-
-    // Ingresar la asistencia anual para el estudiante
+    // Obtener datos de asistencia anual
     let asistenciaAnual = {
         marzo: parseInt(prompt("Ingrese la asistencia de marzo:")),
         abril: parseInt(prompt("Ingrese la asistencia de abril:")),
@@ -58,21 +23,38 @@ function agregarEstudiante() {
         diciembre: parseInt(prompt("Ingrese la asistencia de diciembre:"))
     };
 
+    // Obtener notas y asistencias por materia
+    let examenes = [];
+    let continuar = true;
 
-    // Agregar el estudiante al arreglo de estudiantes
-    estudiantes.push({
-        nombre: nombre,
-        apellido: apellido,
-        examenes: examenes,
-        asistenciaAnual: asistenciaAnual
-    });
+    while (continuar) {
+        let materia = prompt("Ingrese el nombre de la materia:");
+        let notas = [];
+        let asistencia = [];
 
-    // Confirmar la adición del estudiante
-    console.log(`${nombre} ${apellido} ha sido agregado al arreglo de estudiantes.`);
+        for (let i = 0; i < 3; i++) {
+            let nota = parseFloat(prompt(`Ingrese la nota ${i + 1} para ${materia}:`));
+            notas.push(nota);
+
+            let asistio = prompt(`¿El estudiante asistió a la clase ${i + 1} de ${materia}? (si/no)`).toLowerCase();
+            asistencia.push(asistio === 'si');
+        }
+
+        examenes.push({
+            materia: materia,
+            asistencia: asistencia,
+            notas: notas
+        });
+
+        continuar = prompt("¿Desea agregar otra materia? (si/no)").toLowerCase() === 'si';
+    }
+
+    // Agregar el nuevo estudiante a ambos arreglos base
+    estudiantes.push({ nombre, apellido, asistenciaAnual });
+    estudiantesNotas.push({ nombre, apellido, examenes });
+
+    console.log(`Estudiante ${nombre} ${apellido} ha sido agregado a ambos registros.`);
 }
-
-// Ejecutar la función para agregar un nuevo estudiante
-//agregarEstudiante();
 
 
 export default agregarEstudiante
