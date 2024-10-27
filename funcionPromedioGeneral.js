@@ -1,3 +1,5 @@
+funcionPromedioGeneral.js
+
 import estudiantesNotas from './arraynotasyasistencia.js';
 
 function calcularPromedioGeneral(estudiantesNotas) {
