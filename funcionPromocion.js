@@ -1,3 +1,5 @@
+funcionPromocion.js
+
 import calcularPromediosPorMateria from './funcionPromedioMateria.js';
 import estudiantesNotas from './arraynotasyasistencia.js';
 

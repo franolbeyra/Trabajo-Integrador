@@ -1,3 +1,5 @@
+arraynotasyasistencia.js
+
 const estudiantesNotas = [
     {
         nombre: 'Juan',

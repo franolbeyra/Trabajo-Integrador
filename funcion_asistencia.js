@@ -1,3 +1,5 @@
+funcion_asistencia.js
+
 import estudiantes from './arreglodeasistencia.js';
 function calcularAsistencia() {
     const totalDiasHabiles = 190;
@@ -20,7 +22,7 @@ function calcularAsistencia() {
         // Calcular faltas
         const faltas = totalDiasHabiles - asistenciaTotal;
 
-        
+
 
         // Agregar el resultado al arreglo
         resultados.push({
@@ -29,12 +31,12 @@ function calcularAsistencia() {
             asistenciaTotal: asistenciaTotal,
             promedioAsistidor: promedioAsistidor,
             faltas: faltas
-            
+
         });
     }
 
     // Ordenar los resultados por asistenciaTotal usando .sort()
-    resultados.sort(function(a, b) {
+    resultados.sort(function (a, b) {
         return a.asistenciaTotal - b.asistenciaTotal; // Ordenar de menor a mayor
     });
 

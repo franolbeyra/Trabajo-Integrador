@@ -1,5 +1,6 @@
-const prompt = promptSync();
+funcionAgregarAlumnos.js
 
+const prompt = promptSync();
 import promptSync from 'prompt-sync';
 
 
