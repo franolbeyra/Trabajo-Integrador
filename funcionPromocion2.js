@@ -18,7 +18,7 @@ function obtenerPromociones(estudiantesNotas) {
             let promedio = parseFloat(datosPromedios[materia][estudiante]);
 
             // Si el promedio es mayor a 8, el estudiante promociona
-            if (promedio > 8) {
+            if (promedio >= 8) {
                 promocionados.push(estudiante);
             }
         }
