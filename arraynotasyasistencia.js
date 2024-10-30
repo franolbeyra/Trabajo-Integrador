@@ -1,5 +1,4 @@
 
-
 const estudiantesNotas = [
     {
         nombre: 'Juan',
@@ -16,9 +15,9 @@ const estudiantesNotas = [
                 notas: [9, 8, 7]
             },
             {
-                materia: 'sistemas de computacion',
-                asistencia: [false, true, true],
-                notas: [0, 7, 9]
+                materia: 'sistemas',
+                asistencia: [true, true, false],
+                notas: [9, 7, 0]
             },
             {
                 materia: 'ingles',
@@ -47,7 +46,7 @@ const estudiantesNotas = [
                 notas: [8, 0, 9]
             },
             {
-                materia: 'sistemas de computacion',
+                materia: 'sistemas',
                 asistencia: [true, true, true],
                 notas: [6, 8, 7]
             },
@@ -78,7 +77,7 @@ const estudiantesNotas = [
                 notas: [9, 0, 8]
             },
             {
-                materia: 'sistemas de computacion',
+                materia: 'sistemas',
                 asistencia: [true, true, false],
                 notas: [7, 8, 0]
             },
@@ -109,7 +108,7 @@ const estudiantesNotas = [
                 notas: [0, 8, 9]
             },
             {
-                materia: 'sistemas de computacion',
+                materia: 'sistemas',
                 asistencia: [true, true, false],
                 notas: [7, 8, 0]
             },
@@ -140,7 +139,7 @@ const estudiantesNotas = [
                 notas: [7, 0, 8]
             },
             {
-                materia: 'sistemas de computacion',
+                materia:'sistemas',
                 asistencia: [true, true, true],
                 notas: [8, 9, 7]
             },
